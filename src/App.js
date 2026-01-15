@@ -62,14 +62,10 @@ function App() {
         <section className="profile-section">
           <div className="profile-container">
             <div className="profile-image">
-              <img
-                src='/public/profil.png'
-                alt='Foto Profil'
-                className='profile-photo'
-              />
+              <img src="/profil.png" alt="Foto Profil" className="profile-photo"/>
             </div>
             <div className="profile-description">
-              <h2>Halo, Saya Nama Anda</h2>
+              <h2>Halo, Saya Lais Gustiwa</h2>
               <p>
                 Saya seorang Mahasiswa jurusan Informatika dengan minat besar dalam dunia teknologi. 
                 Saya selalu bersemangat untuk belajar hal-hal baru dan mengembangkan keterampilan saya dalam pengembangan program, web, dan desain UI/UX.
