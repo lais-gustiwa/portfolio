@@ -1,0 +1,413 @@
+/* App.css - Styling untuk portofolio */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f5f7fa;
+  color: #333;
+  line-height: 1.6;
+}
+
+.App {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header */
+.header {
+  text-align: center;
+  padding: 30px 0;
+  margin-bottom: 40px;
+}
+
+.header h1 {
+  font-size: 2.8rem;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.header p {
+  font-size: 1.2rem;
+  color: #7f8c8d;
+}
+
+/* Bagian Profil */
+.profile-section {
+  background-color: white;
+  border-radius: 15px;
+  padding: 40px;
+  margin-bottom: 40px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.profile-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.profile-image {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-placeholder {
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #3498db, #8e44ad);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 10px 25px rgba(52, 152, 219, 0.3);
+}
+
+.initials {
+  font-size: 5rem;
+  font-weight: bold;
+  color: white;
+}
+
+.profile-description {
+  flex: 2;
+  min-width: 300px;
+}
+
+.profile-description h2 {
+  font-size: 2.2rem;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+.profile-description p {
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 25px;
+}
+
+.skill-tag {
+  background-color: #eef5ff;
+  color: #3498db;
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-weight: 600;
+  border: 1px solid #d1e3ff;
+}
+
+/* Tabs */
+.tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 10px;
+}
+
+.tab-btn {
+  background: none;
+  border: none;
+  padding: 12px 30px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #7f8c8d;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-bottom: 3px solid transparent;
+}
+
+.tab-btn.active {
+  color: #3498db;
+  border-bottom: 3px solid #3498db;
+}
+
+.tab-btn:hover {
+  color: #3498db;
+}
+
+/* Bagian Proyek */
+.projects-section h2, .contact-section h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #2c3e50;
+  font-size: 1.8rem;
+}
+
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 25px;
+  margin-bottom: 40px;
+}
+
+.project-card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 25px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-top: 4px solid #3498db;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.project-card.completed {
+  border-top-color: #2ecc71;
+}
+
+.project-card.ongoing {
+  border-top-color: #f39c12;
+}
+
+.project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 15px;
+}
+
+.project-header h3 {
+  font-size: 1.3rem;
+  color: #2c3e50;
+  flex: 1;
+}
+
+.project-status {
+  font-size: 0.85rem;
+  padding: 5px 10px;
+  border-radius: 15px;
+  font-weight: 600;
+}
+
+.project-status.selesai {
+  background-color: #d5f4e6;
+  color: #27ae60;
+}
+
+.project-status.berlangsung {
+  background-color: #fef5e7;
+  color: #d35400;
+}
+
+.project-description {
+  color: #555;
+  margin-bottom: 20px;
+  font-size: 0.95rem;
+}
+
+.project-technologies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.tech-tag {
+  background-color: #f8f9fa;
+  color: #555;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 0.85rem;
+  border: 1px solid #eee;
+}
+
+.project-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 15px;
+  border-top: 1px solid #eee;
+}
+
+.project-year {
+  color: #7f8c8d;
+  font-weight: 600;
+}
+
+.project-stats {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.stat {
+  text-align: center;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  min-width: 150px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.stat h3 {
+  font-size: 2.5rem;
+  color: #3498db;
+  margin-bottom: 10px;
+}
+
+.stat p {
+  color: #7f8c8d;
+  font-weight: 600;
+}
+
+/* Bagian Kontak */
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.contact-info {
+  flex: 1;
+  min-width: 300px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.contact-item:hover {
+  transform: translateX(5px);
+}
+
+.contact-icon {
+  font-size: 1.8rem;
+  margin-right: 20px;
+  margin-top: 5px;
+}
+
+.contact-item h3 {
+  color: #2c3e50;
+  margin-bottom: 8px;
+  font-size: 1.2rem;
+}
+
+.contact-item p {
+  color: #555;
+}
+
+.map-placeholder {
+  flex: 1;
+  min-width: 300px;
+  background-color: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.map-placeholder h3 {
+  color: #2c3e50;
+  margin-bottom: 20px;
+  font-size: 1.4rem;
+}
+
+.map {
+  margin-bottom: 20px;
+}
+
+.map-image {
+  height: 200px;
+  background: linear-gradient(to right, #e3f2fd, #bbdefb);
+  border-radius: 8px;
+  margin-top: 15px;
+  position: relative;
+  overflow: hidden;
+}
+
+.map-points {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.map-point.main {
+  position: absolute;
+  top: 50%;
+  left: 60%;
+  width: 20px;
+  height: 20px;
+  background-color: #e74c3c;
+  border-radius: 50%;
+  box-shadow: 0 0 0 5px rgba(231, 76, 60, 0.3);
+}
+
+.map-point.main::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 8px;
+  height: 8px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.map-note {
+  color: #7f8c8d;
+  font-style: italic;
+  margin-top: 15px;
+  padding-top: 15px;
+  border-top: 1px solid #eee;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 30px 0;
+  margin-top: 50px;
+  color: #7f8c8d;
+  border-top: 1px solid #eee;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+  .profile-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .contact-container {
+    flex-direction: column;
+  }
+  
+  .project-stats {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .stat {
+    width: 100%;
+    max-width: 250px;
+  }
+  
+  .header h1 {
+    font-size: 2.2rem;
+  }
+}
