@@ -53,7 +53,7 @@ function App() {
   return (
     <div className="App">
       <header className="header">
-        <h1>Portofolio Saya</h1>
+        <h1>Profil Lais Gustiwa</h1>
         <p>Pengembang Program, Full-Stack & Desainer UI/UX</p>
       </header>
 
@@ -63,7 +63,7 @@ function App() {
           <div className="profile-container">
             <div className="profile-image">
               <div className="image-placeholder">
-                <span className="initials">NA</span>
+                <span img src="/public/profil.png">Foto Profil</span>
               </div>
             </div>
             <div className="profile-description">
@@ -202,7 +202,7 @@ function App() {
                     </div>
                   </div>
                   <p className="map-note">
-                    Saya terbuka untuk peluang kerja remote maupun on-site di area Jakarta dan sekitarnya.
+                    Saya terbuka untuk peluang kerja remote maupun on-site di area Bandung dan sekitarnya.
                   </p>
                 </div>
               </div>
@@ -212,7 +212,7 @@ function App() {
       </div>
 
       <footer className="footer">
-        <p>© {new Date().getFullYear()} Portofolio Nama Anda. Dibuat dengan React.</p>
+        <p>© {new Date().getFullYear()} Profil Lais Gustiwa. Dibuat dengan React.</p>
       </footer>
     </div>
   );
