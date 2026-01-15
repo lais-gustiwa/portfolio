@@ -63,7 +63,7 @@ function App() {
           <div className="profile-container">
             <div className="profile-image">
               <div className="image-placeholder">
-                <span img src="/public/profil.png">Foto Profil</span>
+                <img src='/public/profil.png' alt='Foto Profil' />
               </div>
             </div>
             <div className="profile-description">
