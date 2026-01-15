@@ -71,9 +71,7 @@ function App() {
                 Saya selalu bersemangat untuk belajar hal-hal baru dan mengembangkan keterampilan saya dalam pengembangan program, web, dan desain UI/UX.
                 Saya berkomitmen untuk menciptakan solusi digital yang inovatif dan user-friendly.
               </p>
-              <p>
-                Selain coding, saya juga aktif dalam komunitas teknologi lokal dan sering berbagi pengetahuan melalui blog dan workshop.
-              </p>
+              
               <div className="skills">
                 <span className="skill-tag">Python</span>
                 <span className="skill-tag">C++</span>
