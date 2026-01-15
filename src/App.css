@@ -51,19 +51,28 @@ body {
   gap: 40px;
 }
 
-/* Tambahkan di bagian profile styling */
+
+.profile-image {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .profile-photo {
   width: 280px;
   height: 280px;
   border-radius: 50%;
   object-fit: cover;
-  box-shadow: 0 10px 25px rgba(52, 152, 219, 0.3);
-  transition: transform 0.3s ease;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
   border: 5px solid white;
 }
 
-.profile-photo:hover {
-  transform: scale(1.03);
+/* Jika ingin menggunakan placeholder sementara */
+.profile-photo.missing {
+  filter: grayscale(100%);
+  opacity: 0.8;
 }
 
 /* Responsif untuk mobile */
@@ -72,14 +81,6 @@ body {
     width: 220px;
     height: 220px;
   }
-}
-
-.profile-image {
-  flex: 1;
-  min-width: 300px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .image-placeholder {
