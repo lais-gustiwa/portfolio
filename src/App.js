@@ -62,9 +62,11 @@ function App() {
         <section className="profile-section">
           <div className="profile-container">
             <div className="profile-image">
-              <div className="image-placeholder">
-                <img src='/public/profil.png' alt='Foto Profil' />
-              </div>
+              <img
+                src='/public/profil.png'
+                alt='Foto Profil'
+                className='profile-photo'
+              />
             </div>
             <div className="profile-description">
               <h2>Halo, Saya Nama Anda</h2>

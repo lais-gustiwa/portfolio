@@ -51,6 +51,29 @@ body {
   gap: 40px;
 }
 
+/* Tambahkan di bagian profile styling */
+.profile-photo {
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 10px 25px rgba(52, 152, 219, 0.3);
+  transition: transform 0.3s ease;
+  border: 5px solid white;
+}
+
+.profile-photo:hover {
+  transform: scale(1.03);
+}
+
+/* Responsif untuk mobile */
+@media (max-width: 768px) {
+  .profile-photo {
+    width: 220px;
+    height: 220px;
+  }
+}
+
 .profile-image {
   flex: 1;
   min-width: 300px;
