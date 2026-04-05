@@ -9,41 +9,17 @@ function App() {
   const projects = [
     {
       id: 1,
-      title: "Sistem Manajemen Inventaris",
-      description: "Aplikasi web untuk mengelola inventaris perusahaan dengan fitur pelacakan real-time dan pelaporan otomatis.",
+      title: "Sistem Kasir",
+      description: "Sistem untuk menyimpan dan menambahkan stok barang dan harga pada setiap item.",
       status: "selesai",
-      technologies: ["React", "Node.js", "MongoDB"],
-      year: "2023"
-    },
-    {
-      id: 2,
-      title: "Aplikasi E-Commerce Mobile",
-      description: "Aplikasi mobile untuk platform e-commerce dengan integrasi pembayaran digital dan sistem rekomendasi produk.",
-      status: "berlangsung",
-      technologies: ["React Native", "Express.js", "Firebase"],
-      year: "2024"
-    },
-    {
-      id: 3,
-      title: "Platform Belajar Online",
-      description: "Website pembelajaran interaktif dengan video kursus, kuis, dan sertifikat kelulusan.",
-      status: "selesai",
-      technologies: ["Next.js", "PostgreSQL", "Stripe"],
-      year: "2023"
-    },
-    {
-      id: 4,
-      title: "Sistem Analisis Data Keuangan",
-      description: "Tool analisis data untuk prediksi tren keuangan dengan visualisasi dashboard interaktif.",
-      status: "berlangsung",
-      technologies: ["Python", "Django", "Chart.js"],
-      year: "2024"
+      technologies: ["Python"],
+      year: "2025"
     }
   ];
 
   // Data kontak
   const contactInfo = {
-    alamat: "Perumahan Tirta Regency U.40, Bandung, Indonesia",
+    alamat: "Perumahan Tirta Regency, Bandung, Indonesia",
     email: "laisgustiwa@student.inaba.ac.id",
     telepon: "+62 882 0001 32292",
     linkedin: "linkedin.com/in/lais-gustiwa",
@@ -62,7 +38,7 @@ function App() {
         <section className="profile-section">
           <div className="profile-container">
             <div className="profile-image">
-              <img src="/profil.png" alt="Foto Profil" className="profile-photo"/>
+              <img src="/public/Profil.jpeg" alt="Foto Profil" className="profile-photo"/>
             </div>
             <div className="profile-description">
               <h2>Halo, Saya Lais Gustiwa</h2>
@@ -76,7 +52,7 @@ function App() {
                 <span className="skill-tag">Python</span>
                 <span className="skill-tag">C++</span>
                 <span className="skill-tag">JavaScript</span>
-                <span className="skill-tag">React</span>
+                <span className="skill-tag">React.js</span>
                 <span className="skill-tag">Node.js</span>
                 <span className="skill-tag">UI/UX Design</span>
                 <span className="skill-tag">MongoDB</span>
@@ -189,7 +165,13 @@ function App() {
                 </div>
                 <div className="map-placeholder">
                   <h3>Lokasi Saya</h3>
-                  <div className="map">
+                  <a
+                  href='https://www.google.com/maps/place/TIRTA+Regency/@-7.0195304,107.6022499,17z/data=!4m14!1m7!3m6!1s0x2e68ebd5a73a69f9:0x5c2c5d18c3986fe2!2sTIRTA+Regency!8m2!3d-7.0195357!4d107.6048248!16s%2Fg%2F11rrt_0pw7!3m5!1s0x2e68ebd5a73a69f9:0x5c2c5d18c3986fe2!8m2!3d-7.0195357!4d107.6048248!16s%2Fg%2F11rrt_0pw7?entry=ttu&g_ep=EgoyMDI2MDQwMS4wIKXMDSoASAFQAw%3D%3D'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  style={{textDecoration: 'none', color: 'inherit'}}
+                  >
+                    <div className="map">
                     <p>📍 Bandung, Indonesia</p>
                     <div className="map-image">
                       <div className="map-points">
@@ -197,6 +179,7 @@ function App() {
                       </div>
                     </div>
                   </div>
+                  </a>
                   <p className="map-note">
                     Saya terbuka untuk peluang kerja remote maupun on-site di area Bandung dan sekitarnya.
                   </p>
