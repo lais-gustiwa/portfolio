@@ -38,7 +38,7 @@ function App() {
         <section className="profile-section">
           <div className="profile-container">
             <div className="profile-image">
-              <img src="/public/Profil.png" alt="Foto Profil" className="profile-photo"/>
+              <img src="/Profil.png" alt="Foto Profil" className="profile-photo"/>
             </div>
             <div className="profile-description">
               <h2>Halo, Saya Lais Gustiwa</h2>
