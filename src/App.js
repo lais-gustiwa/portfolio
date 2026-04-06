@@ -55,7 +55,7 @@ function App() {
                 <span className="skill-tag">React.js</span>
                 <span className="skill-tag">Node.js</span>
                 <span className="skill-tag">UI/UX Design</span>
-                <span className="skill-tag">MongoDB</span>
+                <span className="skill-tag">MySQL</span>
                 <span className="skill-tag">Git</span>
               </div>
             </div>
